@@ -1,3 +1,6 @@
+var escapeRegexp = require('escape-regexp');
+
+
 /**
  * List of string tokens that should be flagged
  */
@@ -40,8 +43,8 @@ var flagUrls = [
 
 // Process above flag lists and turn them into regular expressions. This ensures the matches later
 // are much quicker.
-var flagStringsRegex = new RegExp(flagStrings.join('|'));
-var flagUrlsRegex = new RegExp(flagUrls.join('|'));
+var flagStringsRegex = new RegExp(escapeRegexp(flagStrings.join('|')));
+var flagUrlsRegex = new RegExp(escapeRegexp(flagUrls.join('|')));
 
 
 /**
@@ -49,12 +52,9 @@ var flagUrlsRegex = new RegExp(flagUrls.join('|'));
  * 
  * @param {type} message
  * @param {type} url
- * @param {type} lineNumber
- * @param {type} columnNumber
- * @param {type} errorObj
  * @returns {Boolean}
  */
-exports.test = function (message, url, lineNumber, columnNumber, errorObj) {
+exports.test = function (message, url) {
 	// Check if the error message contained a token we should flag
 	if (message.match(flagStringsRegex)) {
 		return true;

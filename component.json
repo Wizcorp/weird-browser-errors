@@ -1,10 +1,14 @@
 {
-	"name": "WeirdBrowserErrors",
-	"repo": "Wizcorp/WeirdBrowserErrors",
+	"name": "weird-browser-errors",
+	"repo": "Wizcorp/weird-browser-errors",
 	"description": "API which detects weird browser errors",
-	"version": "0.0.1",
+	"version": "0.1.0",
+	"dependencies": {
+		"component/escape-regexp": "1.0.2"
+	},
 	"scripts": [
 		"index.js",
-		"tests/abc.js"
+		"tests/facebook.js",
+		"tests/other.js"
 	]
 }
