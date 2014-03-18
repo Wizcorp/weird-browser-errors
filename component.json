@@ -1,0 +1,10 @@
+{
+	"name": "WeirdBrowserErrors",
+	"repo": "Wizcorp/WeirdBrowserErrors",
+	"description": "API which detects weird browser errors",
+	"version": "0.0.1",
+	"scripts": [
+		"index.js",
+		"tests/abc.js"
+	]
+}
