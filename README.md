@@ -1,5 +1,5 @@
-WeirdBrowserErrors
-==================
+Weird Browser Errors
+====================
 
 
 What to expect
@@ -13,7 +13,7 @@ How to contribute
 Installation
 ------------
 ```
-component install Wizcorp/WeirdBrowserErrors
+component install Wizcorp/weird-browser-errors
 ```
 
 Best Practice
@@ -48,7 +48,7 @@ console.timeEnd('indexOf');
 
 License
 -------
-WierdBrowserErrors is distributed under the `MIT` License.
+Weird Browser Errors is distributed under the `MIT` License.
 
 References
 ----------
